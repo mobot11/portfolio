@@ -1,0 +1,17 @@
+@import 'globals';
+
+ul {
+  // display: inline-block;
+  float: right;
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 3px;
+    a {
+      text-decoration: none;
+    }
+  }
+  li:hover {
+    text-decoration: underline;
+  }
+}

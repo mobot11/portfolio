@@ -1,11 +1,14 @@
 import React from 'react';
+import menuStyles from '../sass/menu.scss';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
 	return (
-		<div>
+		<div className={ menuStyles.component }>
+			<nav>
 			<ul>
 				<li>
-					<Link to={'/'}>Homepage</Link>
+					<Link to={'/'}>Home</Link>
 				</li>
 				<li>
 					<Link to={'/about'}>About</Link>
@@ -14,7 +17,9 @@ const Menu = () => {
 					<Link to={'/contact'}>Contact</Link>
 				</li>
 			</ul>
+			</nav>
 		</div>
+		
 	);
 };
 

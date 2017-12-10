@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
-import homepageStyles from '../sass/homepage.scss';
+import appStyles from '../sass/app.scss';
 import Menu from '../components/Menu.js';
 import Home from '../components/Home.js';
 import About from '../components/About.js';
-import contact from '../components/Contact.js';
+import Contact from '../components/Contact.js';
 
 class App extends Component {
 	constructor(props) {
@@ -24,9 +24,11 @@ class App extends Component {
 					]}
 				/>
 				<Switch>
-					<Route exact path="/" component={Home} />
-					<Route path="/about" component={About} />
-					<Route path="/contact" component={Contact} />
+					<div className={ appStyles.component }>
+						<Route exact path="/" component={Home} />
+						<Route path="/about" component={About} />
+						<Route path="/contact" component={Contact} />
+					</div>
 				</Switch>
 			</div>
 		);

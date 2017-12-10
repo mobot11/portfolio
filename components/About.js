@@ -1,7 +1,10 @@
 import React from 'react';
+import aboutStyles from '../sass/about.scss'
+import Menu from './Menu';
+
 const About = () => {
   return (
-    <div>
+    <div className={ aboutStyles.component }>
       <Helmet 
         title="About"
       />
