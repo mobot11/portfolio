@@ -15,14 +15,14 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0"
   },
-  "name": "router-tutorial",
+  "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start-dev": "node development.js",
-    "start-prod": "NODE_ENV=production webpack --config webpack.production.config.js --progress --profile --colors && node production.js",
-    "build-prod": "NODE_ENV=production webpack --config webpack.production.config.js --progress --profile --colors"
+    "start-dev": "node ./serverConfigs/development.js",
+    "start-prod": "yarn build-prod && pm2 start ./serverConfigs/production.js",
+    "build-prod": "NODE_ENV=production webpack --config ./serverConfigs/webpack.production.config.js --progress --profile --colors"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

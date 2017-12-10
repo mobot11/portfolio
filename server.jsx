@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import Template from './template';
-import App from './App';
+import App from './containers/App';
 import { Helmet } from 'react-helmet';
 
 const serverRenderer = ({ clientStats, serverStats }) => {
