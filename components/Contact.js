@@ -1,6 +1,8 @@
 import React from 'react';
 import contactStyles from '../sass/contact.scss';
 import Menu from './Menu';
+import Helmet from 'react-helmet';
+import Header from './Header';
 
 const Contact = () => {
   return (
@@ -8,8 +10,7 @@ const Contact = () => {
       <Helmet 
         title="Contact"
       />
-      <Menu />
-      <h1>Contact</h1>
+      <Header pageTitle='Contact' />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import React from 'react';
-import aboutStyles from '../sass/about.scss'
+import aboutStyles from '../sass/about.scss';
+import Helmet from 'react-helmet';
 import Menu from './Menu';
+import Header from './Header';
 
 const About = () => {
   return (
@@ -8,8 +10,7 @@ const About = () => {
       <Helmet 
         title="About"
       />
-      <Menu />
-      <h1>About</h1>
+      <Header pageTitle='About' />
     </div>
   );
 }

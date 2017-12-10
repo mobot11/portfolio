@@ -1,0 +1,15 @@
+@import 'globals';
+
+.header_container {
+  max-width: 800px;
+  margin: 60px auto 80px auto;
+  color: $copy_color;
+  padding: 0 10px;
+}
+
+.header_container {
+  h1 {
+    line-height: 1.3em;
+    opacity: $font_opacity;
+  }
+}

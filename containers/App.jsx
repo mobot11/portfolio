@@ -23,13 +23,10 @@ class App extends Component {
 						{ name: 'viewport', content: 'width=device-width, inital-scale=1' },
 					]}
 				/>
-				<Switch>
-					<div className={ appStyles.component }>
-						<Route exact path="/" component={Home} />
-						<Route path="/about" component={About} />
-						<Route path="/contact" component={Contact} />
-					</div>
-				</Switch>
+				<Route path="/" component={Menu} />
+				<Route exact path="/" component={Home} />
+				<Route path="/about" component={About} />
+				<Route path="/contact" component={Contact} />
 			</div>
 		);
 	}

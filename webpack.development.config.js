@@ -38,12 +38,25 @@ module.exports = [
 								importLoaders: 1,
 								localIdentName: '[name]__[local]__[hash:base64:5]',
 								sourceMap: true,
+								import: true,
 							},
 						},
 						{
 							loader: 'sass-loader',
+							options: {
+								includePaths: [path.resolve(__dirname, 'sass')],
+							},
 						},
 					],
+				},
+				{
+					test: /\.(jpg|png|svg)$/,
+					use: {
+						loader: "url-loader",
+						options: {
+							limit: 25000,
+						},
+					},
 				},
 			],
 		},
@@ -86,12 +99,25 @@ module.exports = [
 								importLoaders: 1,
 								localIdentName: '[name]__[local]__[hash:base64:5]',
 								sourceMap: true,
+								import: true,
 							},
 						},
 						{
 							loader: 'sass-loader',
+							options: {
+								includePaths: [path.resolve(__dirname, 'sass')],
+							},
 						},
 					],
+				},
+				{
+					test: /\.(jpg|png|svg)$/,
+					use: {
+						loader: "url-loader",
+						options: {
+							limit: 25000,
+						},
+					},
 				},
 			],
 		},

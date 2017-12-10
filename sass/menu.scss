@@ -1,17 +1,24 @@
 @import 'globals';
 
-ul {
-  // display: inline-block;
+.nav_menu {
+ padding: 40px 20px;
   float: right;
   li {
     list-style: none;
     display: inline-block;
-    padding: 5px 3px;
+    padding: 0 0 0 20px;
     a {
       text-decoration: none;
+      color: $copy_color;
+      opacity: $font_opacity;
     }
   }
+
   li:hover {
     text-decoration: underline;
+  }
+
+  li:last-item {
+    padding-left: 0;
   }
 }

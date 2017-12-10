@@ -1,20 +1,20 @@
 import React from 'react';
 import menuStyles from '../sass/menu.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
 	return (
-		<div className={ menuStyles.component }>
+		<div className={menuStyles.nav_menu}>
 			<nav>
 			<ul>
 				<li>
-					<Link to={'/'}>Home</Link>
+					<NavLink to={'/'}>Home</NavLink>
 				</li>
 				<li>
-					<Link to={'/about'}>About</Link>
+					<NavLink to={'/about'}>About</NavLink>
 				</li>
 				<li>
-					<Link to={'/contact'}>Contact</Link>
+					<NavLink to={'/contact'}>Contact</NavLink>
 				</li>
 			</ul>
 			</nav>
