@@ -1,5 +1,17 @@
 @import 'globals';
 
 .component {
-  color: blue,
+  color: $copy_color;
+}
+
+.about, .services {
+  padding: 0 0 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5em;
+  opacity: $font_opacity;
+  h4 {
+    font-size: 14px;
+    color: $secondary_color;
+  }
 }

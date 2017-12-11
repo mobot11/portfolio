@@ -463,3 +463,19 @@ template {
   height: 0; 
   clear: both;
 }
+
+div, p {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 75px;
+  border: 8px solid $copy_color;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0 25px;
+  }
+}
