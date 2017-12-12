@@ -15,3 +15,30 @@
     color: $secondary_color;
   }
 }
+
+.about {
+  margin-top: 60px;
+}
+
+.avatar_container {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    align-self: flex-end;
+    // vertical-align: bottom;
+  }
+}
+
+.avatar {
+  background: url('../images/headshot.jpg');
+  border-radius: 80%;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  margin-right: 40%;
+}
+
+@media screen and (max-width: 800px) {
+  margin-right: 0;
+}
+

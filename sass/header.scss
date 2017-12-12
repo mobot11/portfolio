@@ -1,7 +1,7 @@
 @import 'globals';
 
 .header_container {
-  max-width: 800px;
+  max-width: 815px;
   margin: 60px auto 80px auto;
   color: $copy_color;
   padding: 0 10px;
@@ -11,5 +11,6 @@
   h1 {
     line-height: 1.5em;
     opacity: $font_opacity;
+    letter-spacing: 1px;
   }
 }
