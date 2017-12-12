@@ -1,10 +1,13 @@
 import React from 'react';
 import FooterCTA from './FooterCTA';
-
+import FooterCopyright from './FooterCopyright';
 const Footer = () => {
   return (
-    <FooterCTA />
-  )
+    <div>
+      <FooterCTA />
+      <FooterCopyright />
+    </div>
+  );
 }
 
 export default Footer;
