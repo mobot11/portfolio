@@ -6,11 +6,11 @@ import Header from './Header';
 
 const Blog = () => {
   return (
-    <div className={ BlogStyles.component }>
+    <div className={ blogStyles.component }>
       <Helmet 
         title="Blog"
       />
-      <Header pageTitle='Blog' />
+      <Header pageTitle='Blog Coming Soon' />
     </div>
   );
 }
