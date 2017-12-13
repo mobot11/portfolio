@@ -8,27 +8,19 @@ const HomepageServices = () => {
 			<div>
 				<h4>FRONT END DEVELOPMENT</h4>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae
-					dicta doloribus unde esse, ipsum, nobis magnam cupiditate, corporis
-					magni maxime non. Beatae fugit velit odit quia nobis aut rem!
+					I have experience bringing visually stunning designs to life as functional, responsive webpages. I have used many cutting edge JavaScript and CSS technologies while also ensuring compatibility between all browsers.
 				</p>
 			</div>
 			<div>
 				<h4>BACK END DEVELOPMENT</h4>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-					omnis possimus ratione, delectus quaerat ea facere praesentium saepe
-					nostrum placeat dolore dignissimos? Modi fugiat laborum nostrum saepe
-					labore maiores consequatur?
+					Throughout my career I have built and iterated upon stable, scalabale backend tools and services in both NodeJS and PHP that allow efficient and performant delivery and handling of website data.
 				</p>
 			</div>
 			<div>
 				<h4>CMS & CONTENT MANAGEMENT</h4>
 				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-					tempora adipisci laborum debitis rerum eligendi veniam iure nam
-					quisquam obcaecati atque cupiditate, commodi vitae sed perferendis ab
-					cumque sapiente. Labore?
+					I have previous experience with WordPress and Drupal, two of the most popular Content Management tools on the market. At Concur, I am currently working on building our own in-house CMS in NodeJS.
 				</p>
 			</div>
 		</div>

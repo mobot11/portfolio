@@ -1,0 +1,36 @@
+@import 'globals';
+
+.image {
+  width: 100%;
+  padding: 0 0 45% 0;
+  background-size: 100% auto;
+}
+
+.myhood {
+  background-image: url('../images/myhood.png');
+}
+
+.youtube {
+  background-image: url('../images/youtube-search.png');
+}
+
+.react_weather {
+  background-image: url('../images/react-weekly-weather.png');  
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.description {
+  padding: 20px;
+}
+
+.description a {
+  color: $secondary_color;
+}
+
+.description a:hover {
+  text-decoration: underline;
+}

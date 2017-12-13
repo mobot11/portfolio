@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component }    from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import Helmet from 'react-helmet';
-import appStyles from '../sass/app.scss';
-import Menu from '../components/Menu.js';
-import Home from '../components/Home.js';
-import About from '../components/About.js';
-import Contact from '../components/Contact.js';
-
+import Helmet                  from 'react-helmet';
+import appStyles               from '../sass/app.scss';
+import Menu                    from '../components/Menu.js';
+import Home                    from '../components/Home.js';
+import Projects                from '../components/Projects.js';
+import Contact                 from  '../components/Contact.js';
+import Footer                  from '../components/Footer';
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -25,8 +25,9 @@ class App extends Component {
 				/>
 				<Route path="/" component={Menu} />
 				<Route exact path="/" component={Home} />
-				<Route path="/about" component={About} />
+				<Route path="/projects" component={Projects} />
 				<Route path="/contact" component={Contact} />
+				<Route path="/" component={Footer} />
 			</div>
 		);
 	}

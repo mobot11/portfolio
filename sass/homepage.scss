@@ -20,6 +20,14 @@
   margin-top: 60px;
 }
 
+.about a {
+  color: $secondary_color;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
 .avatar_container {
   display: flex;
   justify-content: space-between;

@@ -6,7 +6,6 @@ import Header           from './Header';
 import HeroImage        from './HeroImage';
 import HomepageAbout    from './HomepageAbout';
 import HomepageServices from './HomepageServices';
-import Footer           from './Footer';
 const path = require('path');
 
 const Home = () => {
@@ -19,7 +18,6 @@ const Home = () => {
       <HeroImage imgUrl={path.resolve(__dirname, '../images/') + '/hero-office.jpg'} alt='Picture of office desk' />
       <HomepageAbout />
       <HomepageServices />
-      <Footer />
     </div>
   );
 }
