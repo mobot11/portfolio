@@ -14,8 +14,11 @@ const Menu = () => {
 					<NavLink to={'/projects'}>Projects</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/contact'}>Contact</NavLink>
+					<NavLink to={'/blog'}>Blog</NavLink>
 				</li>
+				<li>
+				<NavLink to={'/blog'}>Social</NavLink>
+			</li>
 			</ul>
 			</nav>
 		</div>

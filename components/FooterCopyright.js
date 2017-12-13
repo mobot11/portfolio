@@ -5,9 +5,8 @@ const FooterCopyright = () => {
   return (
     <footer className={footerStyles.copyright}>
       <p>
-        Copyright Dylan Moberg 2017
+        Copyright Dylan Moberg 2017 <a href="https://github.com/mobot11/portfolio">source</a>
       </p>
-      <a href="https://github.com/mobot11/portfolio">Source</a>
     </footer>
   );
 }

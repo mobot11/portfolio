@@ -5,7 +5,7 @@ import appStyles               from '../sass/app.scss';
 import Menu                    from '../components/Menu.js';
 import Home                    from '../components/Home.js';
 import Projects                from '../components/Projects.js';
-import Contact                 from  '../components/Contact.js';
+import Blog                 from  '../components/Blog.js';
 import Footer                  from '../components/Footer';
 class App extends Component {
 	constructor(props) {
@@ -26,7 +26,7 @@ class App extends Component {
 				<Route path="/" component={Menu} />
 				<Route exact path="/" component={Home} />
 				<Route path="/projects" component={Projects} />
-				<Route path="/contact" component={Contact} />
+				<Route path="/blog" component={Blog} />
 				<Route path="/" component={Footer} />
 			</div>
 		);
