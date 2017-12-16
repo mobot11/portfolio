@@ -16,10 +16,10 @@ class App extends Component {
 			<div>
 				<Helmet
 					htmlAttributes={{ lang: 'en', amp: undefined }}
-					titleTemplate="%s | React App"
+					titleTemplate="%s | Dylan Moberg"
 					titleAttributes={{ itemprop: 'name', lang: 'en' }}
 					meta={[
-						{ name: 'description', content: 'Server side rendering example' },
+						{ name: 'description', content: 'Dylan Moberg portoflio website' },
 						{ name: 'viewport', content: 'width=device-width, inital-scale=1' },
 					]}
 				/>

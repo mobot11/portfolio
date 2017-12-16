@@ -44,9 +44,27 @@
   height: 150px;
   background-size: contain;
   margin-right: 40%;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 800px) {
-  margin-right: 0;
+  .avatar {
+    margin-right: 25px;
+    background-size: cover;
+  }
 }
+
+// @media
+// only screen and (-webkit-min-device-pixel-ratio: 2),
+// only screen and (   min--moz-device-pixel-ratio: 2),
+// only screen and (     -o-min-device-pixel-ratio: 2/1),
+// only screen and (        min-device-pixel-ratio: 2),
+// only screen and (                min-resolution: 192dpi),
+// only screen and (                min-resolution: 2dppx) { 
+  
+//   .avatar {
+//     display: none;
+//   }
+
+// }
 

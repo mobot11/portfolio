@@ -26,7 +26,7 @@ module.exports = [
 					],
 				},
 				{
-					test: /\.scss$/,
+					test: /\.scss|css$/,
 					use: [
 						{
 							loader: 'style-loader',
@@ -87,7 +87,7 @@ module.exports = [
 					],
 				},
 				{
-					test: /\.scss$/,
+					test: /\.scss|css$/,
 					use: [
 						{
 							loader: 'isomorphic-style-loader',

@@ -19,6 +19,7 @@ const Listage = () => {
         </p>
         <p>
           Technologies used:
+        </p>
           <ul>
             <li>React</li>
             <li>NodeJS</li>
@@ -29,7 +30,6 @@ const Listage = () => {
             <li>HTML</li>
             <li>CSS</li>
           </ul>
-        </p>
       </div>
     </div>
   );
@@ -49,6 +49,7 @@ const ReactWeather = () => {
         </p>
         <p>
           Technologies used:
+        </p>
           <ul>
             <li>React</li>
             <li>NodeJS</li>
@@ -61,7 +62,6 @@ const ReactWeather = () => {
             <li>HTML</li>
             <li>CSS</li>
         </ul>
-        </p>
       </div>
     </div>
   );
@@ -78,16 +78,16 @@ const YoutubeSearch = () => {
         </p>
         <p>
           Technologies used:
-          <ul>
-            <li>React</li>
-            <li>NodeJS</li>
-            <li>Express</li>
-            <li>YouTube API</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
         </p>
+        <ul>
+          <li>React</li>
+          <li>NodeJS</li>
+          <li>Express</li>
+          <li>YouTube API</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
       </div>
     </div>
   );
@@ -99,7 +99,7 @@ const Projects = () => {
       <Helmet 
         title="Projects"
       />
-      <Header pageTitle='Here are some of my recent projects, with plenty more on the way' />
+      <Header pageTitle='Here are some of my recent personal projects, with plenty more on the way' />
      <Listage />
      <ReactWeather />
      <YoutubeSearch />

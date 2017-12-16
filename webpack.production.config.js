@@ -17,7 +17,7 @@ module.exports = [
 			publicPath: '/static/',
 		},
 		resolve: {
-			extensions: ['.js', '.jsx']
+			extensions: ['.js', '.jsx'],
 		},
 		devtool: 'source-map',
 		module: {
@@ -28,8 +28,8 @@ module.exports = [
 					use: [
 						{
 							loader: 'babel-loader',
-						}
-					]
+						},
+					],
 				},
 				{
 					test: /\.scss$/,
@@ -43,32 +43,41 @@ module.exports = [
 								modules: true,
 								importLoaders: 1,
 								localIdentName: '[hash:base64:10]',
-								sourceMap: true
-							}
+								sourceMap: true,
+							},
 						},
 						{
-							loader: 'sass-loader'
-						}
-					]
-				}     
+							loader: 'sass-loader',
+						},
+					],
+				},
+				{
+					test: /\.(jpg|png|svg)$/,
+					use: {
+						loader: 'url-loader',
+						options: {
+							limit: 25000,
+						},
+					},
+				},
 			],
 		},
 		plugins: [
 			new webpack.DefinePlugin({
 				'process.env': {
-					NODE_ENV: '"production"'
-				}
+					NODE_ENV: '"production"',
+				},
 			}),
 			new webpack.optimize.UglifyJsPlugin({
 				compress: {
 					warnings: false,
 					screw_ie8: true,
 					drop_console: true,
-					drop_debugger: true
-				}
+					drop_debugger: true,
+				},
 			}),
 			new webpack.optimize.OccurrenceOrderPlugin(),
-		]
+		],
 	},
 	{
 		name: 'server',
@@ -82,7 +91,7 @@ module.exports = [
 		},
 		devtool: 'source-map',
 		resolve: {
-			extensions: ['.js', '.jsx']
+			extensions: ['.js', '.jsx'],
 		},
 		module: {
 			rules: [
@@ -92,13 +101,13 @@ module.exports = [
 					use: [
 						{
 							loader: 'babel-loader',
-						}
-					]
+						},
+					],
 				},
 				{
 					test: /\.scss$/,
 					use: ExtractTextPlugin.extract({
-						fallback: "isomorphic-style-loader",
+						fallback: 'isomorphic-style-loader',
 						use: [
 							{
 								loader: 'css-loader',
@@ -106,24 +115,33 @@ module.exports = [
 									modules: true,
 									importLoaders: 1,
 									localIdentName: '[hash:base64:10]',
-									sourceMap: true
-								}
+									sourceMap: true,
+								},
 							},
 							{
-								loader: 'sass-loader'
-							}
-						]
-					})
-				}
+								loader: 'sass-loader',
+							},
+						],
+					}),
+				},
+				{
+					test: /\.(jpg|png|svg)$/,
+					use: {
+						loader: 'url-loader',
+						options: {
+							limit: 25000,
+						},
+					},
+				},
 			],
 		},
 		plugins: [
 			new ExtractTextPlugin({
 				filename: 'styles.css',
-				allChunks: true
+				allChunks: true,
 			}),
 			new OptimizeCssAssetsPlugin({
-				cssProcessorOptions: { discardComments: { removeAll: true } }
+				cssProcessorOptions: { discardComments: { removeAll: true } },
 			}),
 			new StatsPlugin('stats.json', {
 				chunkModules: true,
@@ -131,6 +149,6 @@ module.exports = [
 				chunks: true,
 				exclude: [/node_modules[\\\/]react/],
 			}),
-		]
-	}
+		],
+	},
 ];
