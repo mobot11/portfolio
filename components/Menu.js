@@ -52,8 +52,8 @@ class Menu extends Component {
 							Social
 						</li>
 						<li className="social_item" style={{display: 'none'}}><a href="https://www.linkedin.com/in/dylanmoberg"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li className="social_item" style={{display: 'none'}}><a href="https://www.linkedin.com/in/dylanmoberg"><i className="fa fa-github" aria-hidden="true"></i></a></li>
-						<li className="social_item" style={{display: 'none'}}><a href="https://www.linkedin.com/in/dylanmoberg"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li className="social_item" style={{display: 'none'}}><a href="https://www.github.com/mobot11"><i className="fa fa-github" aria-hidden="true"></i></a></li>
+						<li className="social_item" style={{display: 'none'}}><a href="https://www.twitter.com/mobot11"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
 						<li className="social_item" style={{display: 'none'}}><a href="mailto:dylanmoberg11@gmail.com"><i className="fa fa-envelope-open" aria-hidden="true"></i></a></li>
 					</ul>
 				</nav>
