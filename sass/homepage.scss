@@ -39,17 +39,16 @@
 
 .avatar {
   background: url('../images/headshot.jpg');
-  border-radius: 80%;
+  border-radius: 20px;
   width: 150px;
   height: 150px;
   background-size: contain;
-  margin-right: 40%;
+  margin-right: 25px;
   background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 800px) {
   .avatar {
-    margin-right: 25px;
     background-size: cover;
   }
 }
