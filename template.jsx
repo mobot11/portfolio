@@ -7,6 +7,7 @@ export default ({ markup, helmet }) => {
     ${helmet.link.toString()}
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="/static/styles.css">
   </head>
   <body ${helmet.bodyAttributes.toString()}">
     <div id="root">${markup}</div>
