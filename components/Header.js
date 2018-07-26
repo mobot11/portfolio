@@ -1,11 +1,8 @@
-import React from 'react';
-import headerStyles from '../sass/header.scss';
-
 const Header = ({pageTitle}) => {
   return (
     <div>
       <div style={{clear: 'both'}}></div>
-      <div className={headerStyles.header_container}>
+      <div className='title'>
         <h1>{pageTitle}</h1>
       </div>
     </div>
