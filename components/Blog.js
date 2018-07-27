@@ -5,10 +5,7 @@ import Header from './Header';
 const Blog = () => {
   return (
     <div>
-      <Menu />
-      <div className="blog">
-        <Header pageTitle="Blog Coming Soon" />
-      </div>
+      <Header pageTitle="Blog Coming Soon" />
       <style jsx>{`
       .blog {
         font-size: 14px;

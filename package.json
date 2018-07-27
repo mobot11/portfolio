@@ -6,7 +6,7 @@
   "author": "Dylan Moberg <dylan.moberg@concur.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 8080",
     "build": "next build",
     "start": "next start"
   },
@@ -19,6 +19,7 @@
     "postcss-loader": "^2.1.5",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-markdown": "^3.4.1",
     "style-loader": "^0.21.0"
   }
 }

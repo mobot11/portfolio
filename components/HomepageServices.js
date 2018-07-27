@@ -29,6 +29,38 @@ const HomepageServices = () => {
           currently working on building our own in-house CMS in NodeJS.
         </p>
       </div>
+      <style jsx>{`
+      @import 'globals';
+      
+      .services {
+        padding: 0 0 40px 0;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.5em;
+        opacity: 0.8;
+      }
+
+      .services h4 {
+        font-size: 14px;
+        color: #197993;
+      }
+    
+      .avatar {
+        background: url('../images/headshot.jpg');
+        border-radius: 20px;
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+        margin-right: 25px;
+        background-repeat: no-repeat;
+      }
+      
+      @media screen and (max-width: 800px) {
+        .avatar {
+          background-size: cover;
+        }
+      }
+      `}</style>
     </div>
   );
 };
