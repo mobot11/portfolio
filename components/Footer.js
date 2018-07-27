@@ -8,6 +8,6 @@ const Footer = () => {
       <FooterCopyright />
     </div>
   );
-}
+};
 
 export default Footer;

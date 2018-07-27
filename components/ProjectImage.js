@@ -1,13 +1,26 @@
 import React from 'react';
-import projectStyles from '../sass/projects.scss'
+import PropTypes from 'prop-types';
 
-const ProjectImage = ({imgClass}) => {
-  const classes = `${projectStyles[imgClass]} ${projectStyles.image}`
+const ProjectImage = ({ imgUrl }) => {
   return (
-    <div className={projectStyles.imageContainer}>
-      <div className={classes}></div>
+    <div>
+      <div className="imageContainer">
+        <div className="project-image" />
+      </div>
+      <style jsx>{`
+        .project-image {
+          background-image: url('${imgUrl}');
+          width: 100%;
+          padding: 0 0 45% 0;
+          background-size: 100% auto;
+        }
+      `}</style>
     </div>
   );
-}
+};
+
+ProjectImage.PropTypes = {
+  imgUrl: PropTypes.string,
+};
 
 export default ProjectImage;

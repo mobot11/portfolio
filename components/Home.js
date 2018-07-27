@@ -1,25 +1,32 @@
-import React            from 'react';
-import homepageStyles   from '../sass/homepage.scss';
-import Helmet           from 'react-helmet';
-import Menu             from './Menu';
-import Header           from './Header';
-import HeroImage        from './HeroImage';
-import HomepageAbout    from './HomepageAbout';
+import React from 'react';
+import Header from './Header';
+import HeroImage from './HeroImage';
+import HomepageAbout from './HomepageAbout';
 import HomepageServices from './HomepageServices';
-const path = require('path');
+import Menu from '../components/Menu';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div className={ homepageStyles.component }>
-      <Helmet 
-        title="Home"
-      />
-      <Header pageTitle='Hello my name is Dylan. I am a Full Stack Developer living in Seattle, Washington' />
-      <HeroImage imgUrl={path.resolve(__dirname, '../images/') + '/hero-office.jpg'} alt='Picture of office desk' />
-      <HomepageAbout />
-      <HomepageServices />
+    <div>
+      <Menu />
+      <div className="homepage">
+        <Header pageTitle="Hello my name is Dylan. I am a Full Stack Developer living in Seattle, Washington" />
+        <HeroImage
+          imgUrl='/static/images/hero-image.jpg'
+          alt="Picture of office desk"
+        />
+        <HomepageAbout />
+        <HomepageServices />
+      </div>
+      <Footer />
+      <style jsx>{`
+      .component {
+        color: #090a0f;
+      }
+    `}</style>
     </div>
   );
-}
+};
 
 export default Home;
