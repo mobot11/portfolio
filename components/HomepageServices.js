@@ -30,8 +30,6 @@ const HomepageServices = () => {
         </p>
       </div>
       <style jsx>{`
-      @import 'globals';
-      
       .services {
         padding: 0 0 40px 0;
         max-width: 800px;

@@ -6,16 +6,32 @@
   "author": "Dylan Moberg <dylan.moberg@concur.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next -p 8080",
+    "dev": "npx nodemon -w server.js server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint 'components/**' 'pages/**' server.js"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "eslint": "^5.2.0",
     "eslint-plugin-react": "^7.10.0",
+    "express": "^4.16.3",
+    "isomorphic-unfetch": "^2.1.0",
     "jquery": "^3.3.1",
     "next": "^6.1.1",
+    "nodemon": "^1.18.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-markdown": "^3.4.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "husky": "^1.0.0-rc.13"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn lint"
+    }
   }
 }

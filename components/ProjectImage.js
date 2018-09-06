@@ -19,7 +19,7 @@ const ProjectImage = ({ imgUrl }) => {
   );
 };
 
-ProjectImage.PropTypes = {
+ProjectImage.propTypes = {
   imgUrl: PropTypes.string,
 };
 
